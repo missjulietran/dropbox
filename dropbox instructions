@@ -1,0 +1,63 @@
+create HTML file with buttons
+
+
+mkdir week1 assignemnt
+cd into file init -y
+npm install express
+npm install express-fileupload
+
+add gitignore => node.modules
+
+need a folder contain front end public
+
+index.js
+
+package.js => name is index.js
+
+
+IN index.js
+<MIDDLEWARE></MIDDLEWARE>
+1. to set up any express server
+2. utilise express methods
+3. dealing with body so will have to use body parser //const {json <json file>, urlencoded} = require('express')
+4. use json files
+5. app.use urlencoded false
+6. create fileupload const
+7. activate middleware
+
+DEVELOP CACHE - declare all variables
+1. create cache array or object
+2. define fileArray to send it back later on
+
+DEVELOP NEW FUNCTIONS FOR APP - Download
+1. write FUNCTIONS
+2. return a promise (type of callback) - for casecading code with res and rej
+3. declare const fs = require('fs')
+4. writeFile and make path with uploaded
+5. callback function if err return reject
+6. resolve
+7. invoke a function - use readFile after writeFile to ensure data is in cache
+
+READ FILE FUNCTION
+1. create readfile function with file parameter
+2. return a promise
+3. create callback function
+
+Create new file called Uploaded
+1. name of directory and make a path for it
+
+ONLY WRITTEN FUNCTIONS^^^
+
+
+Make Port
+1. app.listen 8080
+
+DEVELOP APPLICATION
+SET UP ROUTE - 3 separate request
+1. Get request
+2. Post request - console the files
+3. extract fileName and fileData
+4. set item into cache (the object{})** Storing file inside the cache by using FS write file to write into upload folder
+5. send response
+
+
